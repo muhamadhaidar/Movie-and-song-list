@@ -108,7 +108,7 @@ const InfoRow = ({ label, value }: { label: string, value: string | number }) =>
 
 // --- (STYLE DIUBAH) ---
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: '#F9FAFB' }, // <-- Balikin ke Abu-abu
+  safeArea: { flex: 1, backgroundColor: '#ffffffff' }, // <-- Balikin ke Abu-abu
   container: { paddingBottom: 24 },
   
   // Card 1: Header (Putih)
@@ -116,14 +116,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 16,
     padding: 16,
-    backgroundColor: '#FFFFFF', // <-- Balikin ke Putih
-    marginHorizontal: 12, 
-    marginTop: 12, 
-    borderRadius: 12,
+    backgroundColor: '#ebe9e9ff', // <-- Balikin ke Putih
     elevation: 2,
-    shadowColor: '#000',
-    shadowOpacity: 0.05,
-    shadowRadius: 5,
   },
   cover: { width: 100, height: 100, borderRadius: 8 },
   info: { flex: 1, justifyContent: 'center', gap: 4 },
@@ -139,12 +133,8 @@ const styles = StyleSheet.create({
     borderRadius: 12, 
     elevation: 3,
     overflow: 'hidden', 
-    backgroundColor: '#797979ff', // Ini warna "frame hitam"
+    backgroundColor: '#000000ff', // Ini warna "frame hitam"
  // <-- Kasih padding biar tombolnya ngambang
-  },
-  videoContainer: { 
-    backgroundColor: '#000', 
-    overflow: 'hidden', // <-- Paksa video melengkung
   },
 
   // --- (PERUBAHAN STYLE TOMBOL PAUSE DI SINI) ---
@@ -154,6 +144,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 8, // <-- Bikin tombolnya melengkung
     marginTop: 12, // <-- Jarak dari video (area hitam)
+
+    marginHorizontal: 12, // Jarak kiri-kanan tombol
+    marginBottom: 12
   },
   // --- (AKHIR PERUBAHAN) ---
 
